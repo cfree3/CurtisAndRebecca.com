@@ -74,13 +74,17 @@ a:hover {
 #calendar {
     border: 0;
 }
-img.left {
-    float: left;
+#content img {
     border: thick solid black;
     margin: 1em;
 }
-img.right {
+div.left {
+    float: left;
+}
+div.right {
     float: right;
-    border: thick solid black;
-    margin: 1em;
+}
+div.side {
+    width: 50%;
+    text-align: center;
 }
