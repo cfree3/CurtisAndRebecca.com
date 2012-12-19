@@ -2,7 +2,7 @@
 /*
  * CurtisAndRebecca.com
  * utils.php
- * Copyright 2008 Curtis Free and Rebecca Drake. All rights reserved.
+ * Copyright 2008-2009 Curtis Free and Rebecca Drake. All rights reserved.
  */
 
 # Functions

@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="Curtis Free" />
-    <meta name="copyright" content="&copy; 2007-2008 Curtis Free and Rebecca Drake" />
+    <meta name="copyright" content="&copy; 2007-2009 Curtis Free and Rebecca Drake" />
     <title>Curtis Free and Rebecca Drake</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
