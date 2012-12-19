@@ -10,36 +10,21 @@
 
     # Global
 
-    /* Colors */
-    $colors = array();
-    $colors['Serene'] = "#4F87A0";
-
-    # Functions
-
     /**
-     * Returns the hex color code for a (pseudo)randomly-chosen color.
+     * Returns the number of days since Our Wedding!
      */
-    function getRandomColor() {
-        global $colors;
-        // return a randomly-chosen color code
-        return $colors[array_rand($colors)];
-    }
-
-    /**
-     * Returns the number of days remaining until Our Wedding!
-     */
-    function getDaysUntil() {
+    function getDaysSince() {
 
         // obtain a timestamp for the Wedding Date
         $wedding_date_tstamp = strtotime("2009-12-19");
 
-        // calcualte the number of seconds until Our Wedding
-        $seconds_until = $wedding_date_tstamp - time();
+        // calculate the number of seconds since Our Wedding
+        $seconds_since = time() - $wedding_date_tstamp;
 
-        // determine the number of days (rounded up) until Our Wedding
-        $days_until = ceil($seconds_until / 86400); // number of secs in a day
+        // determine the number of days (rounded down) since Our Wedding
+        $days_since = floor($seconds_since / 86400); // number of secs in a day
 
-        return $days_until;
+        return $days_since;
     }
 
 ?>

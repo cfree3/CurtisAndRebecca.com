@@ -8,7 +8,7 @@
     <title>Curtis and Rebecca... together in eternity.</title>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta name="author" content="Curtis Free" />
-    <meta name="copyright" content="&copy; 2009 Curtis Free and Rebecca Drake" />
+    <meta name="copyright" content="&copy; 2009-<?php echo date('Y'); ?> Curtis Free and Rebecca Drake" />
     <link rel="stylesheet" type="text/css" href="style.php" />
   </head>
 
@@ -18,18 +18,7 @@
     </div>
     <div id="top">
       <div id="days">
-        Only <strong><?php echo getDaysUntil(); ?></strong> days!
-      </div>
-      <div id="nav">
-          <a href="home">Home</a>
-          &middot;
-          <a href="event">Event</a>
-          &middot;
-          <a href="registry">Registry</a>
-          &middot;
-          <a href="calendar">Calendar</a>
-          &middot;
-          <a href="rsvp">RSVP</a>
+        Married for <strong><?php echo getDaysSince(); ?></strong> days!
       </div>
     </div>
     <div id="content">

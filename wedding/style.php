@@ -1,10 +1,12 @@
-<?php
-    require('weddingUtils.php');
-    header("Content-type: text/css");
-?>
+<?php header("Content-type: text/css"); ?>
+/*
+ * Curtis and Rebecca... together in eternity.
+ * style.php
+ * <?php echo html_entity_decode('&copy;'); ?> 2007-<?php echo date('Y'); ?> Curtis Free. All rights reserved.
+ */
 body {
     color: #FFFFFF;
-    background-color: <?php echo getRandomColor(); ?>;
+    background-color: #4F87A0;
     font-family: sans;
     font-size: medium;
 }

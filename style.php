@@ -1,11 +1,12 @@
+<?php header("Content-type: text/css"); ?>
 /*
  * CurtisAndRebecca.com
  * style.css
- * Copyright 2007-2009 Curtis Free and Rebecca Drake. All rights reserved.
+ * <?php echo html_entity_decode('&copy;'); ?> 2007-<?php echo date('Y'); ?> Curtis Free and Rebecca Drake. All rights reserved.
  */
 
 body {
-    background-color: #006600;
+    background-color: #006699;
     color: #FFFFFF;
     font-family: Arial, Verdana, sans-serif;
     text-align: center;

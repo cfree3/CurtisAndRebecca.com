@@ -7,16 +7,18 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="Curtis Free" />
-    <meta name="copyright" content="&copy; 2007-2009 Curtis Free and Rebecca Drake" />
+    <meta name="copyright" content="&copy; 2007-<?php echo date('Y'); ?> Curtis Free and Rebecca Drake" />
     <title>Curtis Free and Rebecca Drake</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="style.php" type="text/css" />
   </head>
 
   <body>
     <h1>Curtis Free and Rebecca Drake</h1>
     <p>
-      <img id="main" src="<?php echo getRandomImage(); ?>" alt="This is Us. :-D"
-           title="<?php echo (getUsTimeStr() . ' ' . getUsTimeSuffix()); ?>"/>
+      <a href="/">
+        <img id="main" src="<?php echo getRandomImage(); ?>" alt="This is Us. :-D"
+             title="<?php echo (getUsTimeStr() . ' ' . getUsTimeSuffix()); ?>"/>
+      </a>
     </p>
     <p id="tagline">Together forever since February 11, 2005...</p>
   </body>
