@@ -33,22 +33,25 @@ a:hover {
     margin-right: auto;
 }
 #top {
+    margin: 1em;
     text-align: center;
 }
 #days {
-    display: inline-block;
+    display: inline;
     border: thick solid #000000;
     background-color: #FFFFFF;
     color: #000000;
+    margin: 0.125em;
     padding: 0.3em;
     margin-bottom: 0.5em;
     text-align: center;
 }
 #nav {
-    display: inline-block;
+    display: inline;
     border: thick solid #000000;
     background-color: #FFFFFF;
     color: #000000;
+    margin: 0.125em;
     padding: 0.3em;
     margin-bottom: 0.5em;
     text-align: center;
@@ -60,6 +63,7 @@ a:hover {
     color: #000000;
     overflow: auto;
     padding: 0.375em;
+    zoom: 1;
 }
 #content p {
     padding: 0.375em;
@@ -77,7 +81,6 @@ img.left {
     border: thick solid black;
     margin: 1em;
 }
-
 img.right {
     float: right;
     border: thick solid black;

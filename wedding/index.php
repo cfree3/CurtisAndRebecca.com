@@ -14,7 +14,7 @@
 
   <body>
     <div id="header">
-      <img src="imgs/logo.png" alt="Curtis and Rebecca... together in eternity." />
+      <img src="imgs/logo.gif" alt="Curtis and Rebecca... together in eternity." />
     </div>
     <div id="top">
       <div id="days">
