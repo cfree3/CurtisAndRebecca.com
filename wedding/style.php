@@ -72,9 +72,7 @@ a:hover {
     margin: 0.375em;
 }
 #calendar {
-    padding: 2em;
-    margin-left: auto;
-    margin-right: auto;
+    border: 0;
 }
 img.left {
     float: left;

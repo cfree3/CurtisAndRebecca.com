@@ -12,6 +12,9 @@
     define("REQ_PAGE",    "page");     // content page request parameter
     define("INDENT",      "      ");   // content indentation
 
+    # Redirects
+    $redirects = array();
+
     # Content Scripting
 
     error_reporting(0); // disable error reporting
@@ -21,6 +24,7 @@
 
     // if another page was given in the URL, select it
     if (isset($_REQUEST[REQ_PAGE]) && !empty($_REQUEST[REQ_PAGE])) {
+        process_redirect($_REQUEST[REQ_PAGE]); // possibly take a redirect
         $content_file = get_filename($_REQUEST[REQ_PAGE]);
     }
 
@@ -68,6 +72,21 @@
     function get_filename($page) {
         // somedir/somefile -> somedir.somefile
         return str_replace("/", ".", $page);
+    }
+
+    /**
+     * Performs a redirect, if one exists.
+     *
+     * @param page The page name given in the request parameter.
+     */
+    function process_redirect($page) {
+
+        global $redirects; // $redirects is global
+
+        // if a redirect exists, take it
+        if (isset($redirects[$page])) {
+            header("Location: " . $redirects[$page]);
+        }
     }
 
 ?>

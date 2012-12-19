@@ -25,8 +25,7 @@
           &middot;
           <a href="event">Event</a>
           &middot;
-          <a target="_blank"
-             href="http://www.amazon.com/gp/registry/wedding/CZLQUFNYIFTB">Registry</a>
+          <a href="registry">Registry</a>
           &middot;
           <a href="calendar">Calendar</a>
           &middot;

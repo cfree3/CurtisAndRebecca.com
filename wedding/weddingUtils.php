@@ -12,9 +12,7 @@
 
     /* Colors */
     $colors = array();
-    $colors['Canary']     = "#FCF3CA";
-    $colors['Clover']     = "#619A6C";
-    $colors['Cornflower'] = "#46A5DF";
+    $colors['Serene'] = "#4F87A0";
 
     # Functions
 
@@ -33,7 +31,7 @@
     function getDaysUntil() {
 
         // obtain a timestamp for the Wedding Date
-        $wedding_date_tstamp = strtotime("2010-08-21");
+        $wedding_date_tstamp = strtotime("2009-12-19");
 
         // calcualte the number of seconds until Our Wedding
         $seconds_until = $wedding_date_tstamp - time();
