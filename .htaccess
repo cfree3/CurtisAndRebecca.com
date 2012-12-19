@@ -1,1 +1,11 @@
-DirectoryIndex index.php
+# CurtisAndRebecca.com
+# .htaccess
+# Copyright 2008 Curtis Free and Rebecca Drake. All rights reserved.
+
+# Enable the RewriteEngine.
+RewriteEngine on
+
+# Remove subdomains (including "www").
+RewriteCond %{HTTP_HOST} ^.*\.CurtisAndRebecca\.com$ [NC]
+RewriteRule ^(.*)$ http://CurtisAndRebecca.com/$1 [L]
+

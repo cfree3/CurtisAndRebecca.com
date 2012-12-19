@@ -14,8 +14,8 @@ putenv("TZ=US/Eastern"); // set the local timezone
 # Functions
 
 /**
- * This function is used to generate a random image each time
- * the page is loaded.
+ * This function is used to select a random image of Us each time the page
+ * is loaded.
  */
 function getRandomImage() {
 
@@ -30,17 +30,17 @@ function getRandomImage() {
     $imgs[] = scandir($imgDir);
 
     /*
-     * echo the location of a randomly-chosen image. We specify that
+     * Return the location of a randomly-chosen image. We specify that
      * the random image index must be at least 2, for the array of
      * image directory contents contains "." and ".." entries at
      * at indices 0 and 1, respectively.
      */
-    echo ($imgDir . $imgs[0][mt_rand(2, (count($imgs[0]) - 1))]);
+    return ($imgDir . $imgs[0][mt_rand(2, (count($imgs[0]) - 1))]);
 }
 
 /**
- * This function is used to calculate the number of days that have
- * elapsed since we became "Us."
+ * This function is used to procure a description of the amount of time
+ * that we have been together.
  */
 function getUsTimeStr() {
 
@@ -85,8 +85,25 @@ function getUsTimeStr() {
         $years -= 1;
     }
 
-    // echo the duration as a properly-formatted stringOA
-    echo buildDurationString($years, $months, $days);
+    // return the duration as a properly-formatted string
+    return buildDurationString($years, $months, $days);
+}
+
+/**
+ * This function is used to procure a string describing our time together. The
+ * returned string can be appended to a string giving the amount of time we have
+ * been together to produce an image title/tooltip.
+ */
+function getUsTimeSuffix() {
+
+    /*
+     * Descriptions are stored in a file named "descriptions" (in which
+     * each line represents a different description.
+     */
+    $suffixes = file("suffixes");
+
+    // return a random (trimmed) description from the file
+    return trim($suffixes[array_rand($suffixes)]);
 }
 
 ?>
