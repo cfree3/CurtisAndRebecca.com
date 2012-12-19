@@ -15,6 +15,10 @@
     $imgs[] = 'images/smiles.jpg';
     $imgs[] = 'images/seniorprom.jpg';
     $imgs[] = 'images/gtbanduniform.jpg';
+    $imgs[] = 'images/cozumelcruise.jpg';
+    $imgs[] = 'images/loveseat.jpg';
+    $imgs[] = 'images/hands.jpg';
+    $imgs[] = 'images/lounge.jpg';
 
     // echo the location of a randomly-chosen image
     echo $imgs[array_rand($imgs)];
@@ -22,3 +26,4 @@
   }
 
 ?>
+
