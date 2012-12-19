@@ -15,8 +15,8 @@
   <body>
     <h1>Curtis Free and Rebecca Drake</h1>
     <p>
-      <img id="main" src="<?php getRandomImage() ?>" alt="This is Us. :-D"
-           title="&quot;Us&quot; for <?php getDayCount() ?> days..."/>
+      <img id="main" src="<?php getRandomImage(); ?>" alt="This is Us. :-D"
+           title="<?php getUsTimeStr(); ?> of happiness..."/>
     </p>
     <p id="tagline">Together forever since February 11, 2005...</p>
   </body>
