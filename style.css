@@ -4,22 +4,16 @@
 /* curtis_free@hotmail.com */
 
 body {
-
     background-color: #006600;
     color: #FFFFFF;
     font-family: Arial, Verdana, sans-serif;
     text-align: center;
-
 }
 
 img#main {
-
     border: 0.75em solid #FFFFFF;
-
 }
 
 p#tagline {
-
     font-weight: bold;
-
 }
